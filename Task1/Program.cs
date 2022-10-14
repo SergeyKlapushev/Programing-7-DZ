@@ -24,7 +24,7 @@ int Degree(string message)
     return num;
 }
 
-int Calculation (int a, int b)
+int Calculation(int a, int b)
 {
     int i = 0;
     int otvet = 1;
