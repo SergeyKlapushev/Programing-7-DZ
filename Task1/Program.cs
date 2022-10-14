@@ -2,8 +2,8 @@
 
 int a = Number("Введите число: ");
 int b = Degree("Введите степень: ");
-
 Console.WriteLine(Calculation(a, b));
+
 
 int Number(string message)
 {
@@ -16,6 +16,11 @@ int Degree(string message)
 {
     Console.Write(message);
     int num = Convert.ToInt32(Console.ReadLine());
+    if (num < 0)
+    {
+        Console.WriteLine($"Степень должна быть натуральным числом или 0! Ваше число {num} стало {num * -1}");
+        num = num * -1;
+    }
     return num;
 }
 
